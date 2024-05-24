@@ -1,0 +1,268 @@
+/* ESTILO GERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: transparent;
+    height: 100vh;
+    display: flex;
+}
+
+header .logo img{
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.flex{
+    display: flex;
+}
+
+main{
+    width: 100%;
+}
+
+/* ESTILO DO CABEÇALHO INICIO */
+
+header{
+    background-color: rgb(170, 87, 154);
+    box-shadow: 0px 3px 10px black;
+    min-height: 70px;
+    max-height: auto;
+    flex-wrap: wrap;
+    position: fixed;
+    display: flex;
+    z-index: 1;
+}
+
+.nav-bar{
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 3px 10px rgb(194, 228, 216);
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    color: rgb(170, 87, 154);
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+    margin-top: 1%;
+}
+
+.nav-list li:hover{
+    transform: scale(1.25);
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item{
+    margin: 0 25px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: rgb(59, 187, 142);
+    font-weight: 400;
+    font-weight: bold;
+}
+
+.login-button button{
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.login-button button:hover{
+    box-shadow: 0px 0px 10px black;
+    transform: scale(1.05);
+}
+
+.login-button button a{
+    text-decoration: none;
+    color: rgb(59, 187, 142);
+    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+/* ESTILO DO CABEÇALHO FINAL */
+
+
+/* CONTEUDO INICIO */
+
+main .corpo-do-site{
+    margin-top: 120px;
+    min-height: 600px;
+    max-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../imagens/cadastrar.png");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+
+main .corpo-do-site .conteudo{
+    height: auto;
+    padding: 10px 45px;
+    background: #37c394;
+    opacity: 0.8;
+    font-optical-sizing: 0;
+    width: 500px;
+    box-shadow: white ;
+}
+
+.conteudo h1{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    opacity: 1;
+}
+
+.conteudo form{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em;
+    opacity: 1;
+}
+
+form label{
+    color: #f5f5f5;
+    font-size: 16px;
+    opacity: 1;
+}
+
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 15px;
+    font-size: 15px;
+    opacity: 1;
+}
+
+form input:focus{
+    border-radius: 16px;
+}
+
+form textarea{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 15px;
+    opacity: 1;
+}
+
+form textarea:focus{
+    border-radius: 16px;
+}
+
+form button{
+    padding: 15px;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    transition: all 1s;
+    margin-bottom: 20px;
+    opacity: 1;
+}
+
+form button a{
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+form button:hover{
+    background: #f5f5f5;
+    color: #101026;
+    border-radius: 16px;
+}
+
+form button a:hover{
+    color: #101026;
+}
+
+
+/* CONTEUDO FINAL */
+
+/* RODAPE INICIO */
+
+main .corpo-do-site-rodape .rodape{
+    background-color: white;
+    min-height: auto;
+    max-height: auto;
+    width: 100%;
+    padding: 40px 4%;
+    margin-right: 100px;
+}
+
+main .corpo-do-site-rodape .rodape .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    flex-wrap: wrap;
+}
+
+main .corpo-do-site-rodape .rodape .maps iframe{
+    height: 200px;
+    width: 200px;
+}
+
+main .txt-rodape img{
+    width: 80px;
+    height: 80px;
+}
+
+.corpo-do-site-rodape h1{
+    min-width: auto;
+    max-width: 1000px;
+    margin-top: 20px;
+    color: black;
+    font-size: 20px;
+}
+
+.corpo-do-site-rodape p{
+    min-width: auto;
+    max-width: 1000px;
+    color: black;
+    font-size: 20px;
+}
+
+.corpo-do-site-rodape label{
+    min-width: auto;
+    max-width: 1000px;
+    color: black;
+    font-size: 20px;
+}
+
+.corpo-do-site-rodape .instagram{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+/* RODAPÉ FINAL */
+

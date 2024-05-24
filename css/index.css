@@ -1,0 +1,283 @@
+/* ESTILO GERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: transparent;
+    height: 100vh;
+    display: flex;
+}
+
+header .logo img{
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.flex{
+    display: flex;
+}
+
+main{
+    width: 100%;
+}
+
+/* ESTILO DO CABEÇALHO INICIO */
+
+header{
+    background-color: rgb(170, 87, 154);
+    box-shadow: 0px 3px 10px black;
+    min-height: 70px;
+    max-height: auto;
+    flex-wrap: wrap;
+    position: fixed;
+    display: flex;
+    z-index: 1;
+}
+
+.nav-bar{
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 3px 10px rgb(194, 228, 216);
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    color: rgb(170, 87, 154);
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+    margin-top: 1%;
+}
+
+.nav-list li:hover{
+    transform: scale(1.25);
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item{
+    margin: 0 25px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: rgb(59, 187, 142);
+    font-weight: 400;
+    font-weight: bold;
+}
+
+.login-button button{
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.login-button button:hover{
+    box-shadow: 0px 0px 10px black;
+    transform: scale(1.05);
+}
+
+.login-button button a{
+    text-decoration: none;
+    color: rgb(59, 187, 142);
+    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* ESTILO DO CABEÇALHO FINAL */
+
+
+/* MENU INICIO */
+
+main .corpo-do-site-menu .banner{
+    margin-top: 10%;
+    margin-left: 20px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+main .corpo-do-site-menu .banner .bannerImagem img{
+    height: 60%;
+    margin-top: 5%;
+}
+
+main .corpo-do-site-menu .banner .bannerTexto{
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    font-size: 40px;
+    text-wrap: wrap;
+    color: rgb(128, 189, 168);
+}
+
+main .corpo-do-site-menu .menu{
+    background-color: rgb(194, 228, 216);
+    min-height: 450px;
+    max-height: auto;
+    width: 100%;
+    padding: 40px 4%;
+    text-align: center;
+    margin-top: 120px;
+}
+
+main .corpo-do-site-menu .menu .flex{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main .corpo-do-site-menu .menu .titulo{
+    color: rgb(255, 255, 255);
+    font-size: 58px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Dancing Script", cursive;
+}
+
+main .corpo-do-site-menu .menu .menu-box{
+    margin-top: 50px;
+    align-items: center;
+    padding: 40px;
+    border-radius: 40px;
+    transition: .5s;
+    border-style: solid;
+    border-color: white;
+    width: 350px;
+    height: 600px;
+    display: flex;
+}
+
+main .corpo-do-site-menu .menu .menu-box h3{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: rgb(100, 143, 128);
+    align-self: self-end;
+    flex: 1;
+}
+
+#menu-box1{
+    background-image: url("../imagens/sombrancelha.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+   
+}
+
+#menu-box2{
+    background-image: url("../imagens/drenagem.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+}
+
+#menu-box3{
+    background-image: url("../imagens/cilios.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+
+}
+
+main .corpo-do-site-menu .menu .menu-box:hover{
+    transform: scale(1.05);  
+    box-shadow: 0 0 20px black;
+}
+
+main .corpo-do-site-menu .menu h3{
+    font-size: 30px;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+main .corpo-do-site-menu .menu p{
+    font-size: 26px;
+}
+
+main .corpo-do-site-menu .menu .menu-box img{
+    height: 300px;
+}
+
+/* MENU FINAL */
+
+/* RODAPE INICIO */
+
+main .corpo-do-site-rodape .rodape{
+    background-color: white;
+    min-height: auto;
+    max-height: auto;
+    width: 100%;
+    padding: 40px 4%;
+    margin-right: 100px;
+}
+
+main .corpo-do-site-rodape .rodape .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    flex-wrap: wrap;
+}
+
+main .corpo-do-site-rodape .rodape .maps iframe{
+    height: 200px;
+    width: 200px;
+}
+
+main .txt-rodape img{
+    width: 80px;
+    height: 80px;
+}
+
+.corpo-do-site-rodape h1{
+    min-width: auto;
+    max-width: 1000px;
+    margin-top: 20px;
+    color: black;
+    font-size: 20px;
+}
+
+.corpo-do-site-rodape p{
+    min-width: auto;
+    max-width: 1000px;
+    color: black;
+    font-size: 20px;
+}
+
+.corpo-do-site-rodape label{
+    min-width: auto;
+    max-width: 1000px;
+    color: black;
+    font-size: 20px;
+}
+
+.corpo-do-site-rodape .instagram{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+/* RODAPÉ FINAL */
+
